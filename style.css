@@ -1,67 +1,104 @@
+:root{
+    --primary-color: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    background-color: azure;
+}
+
 body{
-    width: 1000px;
-    height: 1000px;
-    background: url(./images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: var(--desaturated-blue);
+    font-family: "Red Hat Display", "sans-serif";
+    background:url(./images/pattern-background-desktop.svg) no-repeat;
 }
-#card{
-    width: 400px;
-    height: 600px;
-    background-color: rgb(244, 248, 248);
-    border: solid 1px;
-    border-radius: 20px;
-    border-color: rgb(237, 238, 240);
-  
+
+body * {
+    font-family: "Red Hat Display", "sans-serif";
+    
 
 }
-.icon{
-    width: 400px;
-    height: 200px;
-    background: url(./images/illustration-hero.svg);
-    border-radius:20px 20px 0px 0px;
-   
-}
-.texto{
-    width: 400px;
-    height: 150px;
+
+#container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    background-color: white;
+    width: 400px;
+    margin-bottom: 64px;
+    margin-top: 24px;
+    border-radius: 20px;
+
+}
+
+#illustration {
+    background: url(./images/illustration-hero.svg);
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+#text {
     text-align: center;
-    border: 1px solid red;
+    font-size: 16px;
+    margin: 24px;
+    
+  
 }
-.ilustration{
-    width: 390px;
-    height: 100px;
+
+#text h1{
+    color: var(--dark-blue);
+    margin: 16px 0;
+}
+
+#text p{
+    color: var(--desaturated-blue);
+}
+#icon {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: row;
-    background-color: rgb(183, 198, 211);
-    border: 1px solid;
-    border-radius:20px 20px 20px 20px;
-    border-color: rgb(203, 225, 243); 
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    padding: 16px;
+    justify-content: flex-start;
+    gap: 16px;
+    margin: 0 32px;
+    border-radius: 16px;
 }
-.one{
-    margin-left: 40px;
-    margin-right: 0px;
+
+#icon div b{
+    color: var(--dark-blue);
 }
-.tree{
-    margin-left: 10px;
-    margin-right: 20px;
+
+#change{
+    cursor: pointer;
+    justify-self: flex-end;
+    margin-left: auto;
 }
-button{
-    width: 300px;
-    height: 50px;
-    margin-top: 5px;
-    background-color: blue;
+
+
+#button{
+    text-align: center;
+    padding: 16px ;
+    margin: 32px;
+    border-radius: 10px;
     color: white;
-    border-radius:20px 20px 20px 20px;
-    border-color: rgb(161, 177, 190);    
+    border: none;
+    background-color: var(--desaturated-blue);
+    box-shadow: 0px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
-.orderCancel{
-margin-top: 10px;
+
+#order{
+    align-self: center;
+    cursor: pointer;
 }
